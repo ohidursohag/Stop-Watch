@@ -1,0 +1,52 @@
+body {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.h1{
+   font-size: 50px;
+   font-weight: 700;
+   
+}
+.timeSegment{
+   font-size: 40px;
+   /* border: 2px solid rgb(0, 255, 8); */
+   /* padding: 10px; */
+   width: 50px;
+}
+button {
+   padding: 10px 15px;
+   font-size: 20px;
+   font-weight: 600;
+   margin-top: 10px;
+   border-radius: 8px;
+   color: white;
+   cursor: pointer;
+   width: 100px;
+}
+#timerContainer,#buttonContainer {
+   text-align: center;
+   font-weight: bold;
+   font-size: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+#btnStart {
+   background-color: rgb(0, 255, 0);
+   border: 2px solid rgb(0, 165, 25);
+}
+#btnStop {
+   background-color: rgb(255, 0, 8);
+   border: 2px solid rgb(131, 1, 1);
+}
+#btnPause {
+   background-color: rgb(215, 100, 103);
+   border: 2px solid rgb(128, 68, 68);
+}
+#btnReset {
+   background-color: rgb(100, 200, 215);
+   border: 2px solid rgb(0, 139, 166);
+}

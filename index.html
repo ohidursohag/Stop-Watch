@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>⌚Stop Watch⌚</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   <div>
+      <h1 class="h1 mb-5">⌚Stop Watch⌚</h1>
+      <div>
+         <div id="timerContainer">
+            <span id="hoursCount" class="timeSegment">00</span>
+            <span>:</span>
+            <span id="minutesCount" class="timeSegment">00</span>
+            <span>:</span>
+            <span id="secondCount" class="timeSegment">00</span>
+            <span>:</span>
+            <span id="miliSecondCount" class="timeSegment">00</span>
+         </div>
+         <div id="buttonContainer">
+            <button class="btn text-white text-xl" onclick="startTimeCount()" id="btnStart">Start</button>
+            <button class="btn text-white text-xl" onclick="stopTimeCount()" id="btnStop">Stop</button>
+            <button class="btn text-white text-xl" onclick="resetTimeCount()" id="btnReset">Reset</button>
+         </div>
+
+      <!-- <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-center">
+
+         <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+               <span id="counterElementHours" style="--value:00;"></span>
+            </span>
+            hours
+         </div>
+         <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+               <span id="counterElementMinute" style="--value:00;"></span>
+            </span>
+            min
+         </div>
+         <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+               <span id="counterElementSecond" style="--value:00;"></span>
+            </span>
+            sec
+         </div>
+      </div>
+      <div id="buttonContainer">
+         <button class="btn" onclick="startTimeCount()" id="btnStart">Start</button>
+         <button class="btn" onclick="stopTimeCount()" id="btnStop">Stop</button>
+         <button class="btn" onclick="resetTimeCount()" id="btnReset">Reset</button>
+      </div>
+   </div> -->
+
+   <!-- Script -->
+   <script src="./script.js"></script>
+</body>
+
+</html>
