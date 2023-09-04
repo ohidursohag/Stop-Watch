@@ -8,14 +8,14 @@ const secondCounter = document.getElementById('secondCount');
 const minutesCounter = document.getElementById('minutesCount');
 const hoursCounter = document.getElementById('hoursCount');
 
-// const btnStart = document.getElementById('btnStart');
+const btnStart = document.getElementById('btnStart');
 // const btnPause = document.getElementById('btnPause');
 // const btnStop = document.getElementById('btnStop');
 // const btnReset = document.getElementById('btnReset');
 
 const timeCounter = () => {
    startTimeCounter = setInterval(() => {
-      // console.log(miliSecondCount);
+      console.log('Somossa ki tomar');
       miliSecondCount++;
       if (miliSecondCount < 10) {
          miliSecondCounter.innerText = `0${miliSecondCount}`;
@@ -59,19 +59,40 @@ const timeCounter = () => {
 
 }
 
+// Start Time & end Time On Single Button
+// const startTimeCount = () => {
+//    if (btnStart.innerText === 'Start') {
+//       timeCounter()
+//       btnStart.innerText = 'Stop'
+//       btnStart.setAttribute('id','btnStop')
+//    } else {
+//       clearInterval(startTimeCounter)
+//       btnStart.innerText = 'Start'
+//       btnStart.setAttribute('id', 'btnStart')
+//    }
+// }
+
 // Start Time
 const startTimeCount = () => {
    timeCounter()
+   console.log('start Korci');
 }
 
 // Stop Time
 const stopTimeCount = () => {
-   // timeCounter()
-   clearInterval(startTimeCounter)
+   clearInterval(startTimeCounter);
+   console.log('Stop Korci');
 }
+
 // Reset Watch
 const resetTimeCount = () => {
    clearInterval(startTimeCounter)
+   // on reset stop button toggle to Start button
+   // if (btnStart.innerText === 'Stop') {
+   //    btnStart.innerText = 'Start'
+   //    btnStart.setAttribute('id', 'btnStart')
+   // }
+   console.log('Reset Korci');
    miliSecondCount = 0;
    secondCount = 0;
    minutesCount = 0;
